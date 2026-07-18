@@ -4,14 +4,14 @@
 <script>
 window.alert = function()  
 {     
-confirm("完成的不错！");
+confirm("Great job!");
  window.location.href="level9.php?keyword=not bad!"; 
 }
 </script>
-<title>欢迎来到level8</title>
+<title>Welcome to level 8</title>
 </head>
 <body>
-<h1 align=center>欢迎来到level8</h1>
+<h1 align=center>Welcome to level 8</h1>
 <?php 
 ini_set("display_errors", 0);
 $str = strtolower($_GET["keyword"]);
@@ -24,16 +24,16 @@ $str7=str_replace('"','&quot',$str6);
 echo '<center>
 <form action=level8.php method=GET>
 <input name=keyword  value="'.htmlspecialchars($str).'">
-<input type=submit name=submit value=添加友情链接 />
+<input type=submit name=submit value="Add friendly link" />
 </form>
 </center>';
 ?>
 <?php
- echo '<center><BR><a href="'.$str7.'">友情链接</a></center>';
+ echo '<center><BR><a href="'.$str7.'">Friendly link</a></center>';
 ?>
 <center><img src=level8.jpg></center>
 <?php 
-echo "<h3 align=center>payload的长度:".strlen($str7)."</h3>";
+echo "<h3 align=center>Payload length: ".strlen($str7)."</h3>";
 ?>
 </body>
 </html>

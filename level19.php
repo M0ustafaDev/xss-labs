@@ -4,19 +4,17 @@
 <script>
 window.alert = function()  
 {     
-confirm("完成的不错！");
+confirm("Great job!");
  window.location.href="level20.php?arg01=a&arg02=b"; 
 }
 </script>
-<title>欢迎来到level19</title>
+<title>Welcome to level 19</title>
 </head>
 <body>
-<h1 align=center>欢迎来到level19</h1>
+<h1 align=center>Welcome to level 19</h1>
 <?php
 ini_set("display_errors", 0);
 echo '<embed src="xsf03.swf?'.htmlspecialchars($_GET["arg01"])."=".htmlspecialchars($_GET["arg02"]).'" width=100% heigth=100%>';
 ?>
 </body>
 </html>
-
-

@@ -4,14 +4,14 @@
 <script>
 window.alert = function()  
 {     
-confirm("完成的不错！");
+confirm("Great job!");
  window.location.href="level17.php?arg01=a&arg02=b"; 
 }
 </script>
-<title>欢迎来到level16</title>
+<title>Welcome to level 16</title>
 </head>
 <body>
-<h1 align=center>欢迎来到level16</h1>
+<h1 align=center>Welcome to level 16</h1>
 <?php 
 ini_set("display_errors", 0);
 $str = strtolower($_GET["keyword"]);
@@ -23,8 +23,7 @@ echo "<center>".$str5."</center>";
 ?>
 <center><img src=level16.png></center>
 <?php 
-echo "<h3 align=center>payload的长度:".strlen($str5)."</h3>";
+echo "<h3 align=center>Payload length: ".strlen($str5)."</h3>";
 ?>
 </body>
 </html>
-
